@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocolate Oranges 🍫🍊</title>
+    <style>
+      body {
+        background: linear-gradient(
+          #e4f1fe 0%,
+          #a2a8d3 35%,
+          #38598b 75%,
+          #113f67 100%
+        );
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: blue;
+      }
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        color: chocolate;
+      }
+      .h2-border {
+        border: 2px lightslategray dotted;
+        margin: 0px 742px;
+        border-radius: 15px 15px;
+      }
+      h3 {
+        text-align: center;
+        color: lightskyblue;
+      }
+      .h3-special {
+        border: 2px lightslategray solid;
+        border-radius: 15px 15px 0px 0px;
+        margin: 0px 742px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+      }
+      p {
+        color: orange;
+        margin: 0 auto;
+        padding: 15px 15px;
+        border: 2px lightslategray solid;
+        border-radius: 0px 0px 15px 15px;
+        line-height: 150%;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+      .center-justify {
+        text-align: justify;
+        margin: 0 auto;
+        width: 400px;
+      }
+      button {
+        background-color: lightskyblue;
+        color: chocolate;
+        font-weight: bolder;
+        font-size: 25px;
+        border: 2px slategray solid;
+        padding: 10px 15px;
+        border-radius: 20px 20px;
+        box-shadow: 2px 2px 2px grey;
+      }
+      button:hover {
+        background-color: mediumaquamarine;
+        color: black;
+        cursor: pointer;
+        transition: 150ms ease-in-out;
+      }
+      .using-span {
+        font-style: oblique;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chocolate Oranges</h1>
+    <div class="h2-border">
+      <h2>They're <em>really</em> good</h2>
+    </div>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/444/original/history3.png?1639102716"
+      alt="Terry's Chocolate Oranges"
+    />
+    <div class="h3-special"><h3>About Chocolate Oranges</h3></div>
+    <div class="center-justify">
+      <p>
+        <a
+          href="https://en.wikipedia.org/wiki/Terry%27s_Chocolate_Orange"
+          target="_blank"
+          >Terry's Chocolate Oranges</a
+        >
+        is a chocolate product created by Terry's in 1932 at Terry's Chocolate
+        Works in York, England. The brand has changed ownership several times,
+        and production was moved to Eastern Europe in 2005. Since 2018, the
+        Terry’s Chocolate Orange is produced in Strasbourg, France, by Carambar.
+        <br /><br />
+        They seem to appear during the holidays and are currently hard to find.
+        <span class="using-span"
+          >If you're able to find them, you should stock up.</span
+        >
+        <br /><br />
+        Chocolate oranges are also <strong>good stress relief</strong>; beyond
+        the delicious flavors of orange-infused chocolate, you can take any
+        stress or anger out by hitting it to help break up the slices.
+      </p>
+    </div>
+    <br />
+    <button>Buy now</button><br />
+    <hr />
+    <h3>This page was built by DeAnne Lombardi</h3>
+    <script>
+      function buy() {
+        let name = prompt("What's your name?");
+        let email = prompt("what's your email address?");
+        let oranges = prompt("Do you also like chocolate oranges?");
+        if (oranges === "yes") {
+          alert(
+            "You're on our email list now, " +
+              name +
+              ". Cheers for incoming 🍫🍊 emails!"
+          );
+        } else {
+          alert("Have a nice day, " + name + " ✌");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
